@@ -35,7 +35,7 @@ function chunksize(obj, size) {
         return processobjects(obj);
       }
     } else {
-      return obj.length;
+      return converto2storagevalue(obj.length);
     }
   } else {
     return 0;
