@@ -51,9 +51,7 @@ function processobjects(obj) {
         bytes += getsize(key + obj[key]);
       }
     } catch (ex) {
-      if (ex instanceof RangeError) {
-        bytes = 0;
-      }
+      bytes = 0;
     }
   }
   return bytes;
