@@ -5,6 +5,10 @@ const numberval = 8;
 const stringval = 2;
 const booleanval = 4;
 
+let Kilobyte = 1000;
+let Megabyte = Kilobyte * Kilobyte;
+let Gigabyte = Megabyte * Kilobyte;
+
 function getsize(obj) {
   if (obj !== null) {
     if (typeof (obj) === 'object') {
@@ -63,10 +67,20 @@ function chunkobject(obj, size, bytes) {
   for (let k = 0, j = obj.length; k < j; k += chunk) {
     resarray.push(obj.slice(k, k + chunk));
   }
-  let result = { totalsize: bytes, eachobjectsize: single, output: resarray };
+  let result = { totalsize: converto2storagevalue(bytes), eachobjectsize: single, output: resarray };
   return result;
 }
 
+function converto2storagevalue(bytes){
+if(bytes < Kilobyte)
+  return bytes + "B";
+  else if(bytes >= Kilobyte && bytes < Megabyte)
+  return bytes + "KB";
+  else if(bytes >= Megabyte && bytes < Gigabyte)
+  return bytes + "MB";
+  else
+  return bytes + "TB";
+}
 module.exports = {
   getsize,
   chunksize
