@@ -1,0 +1,15 @@
+{
+  "name": "objectsizelimit",
+  "version": "1.0.0",
+  "description": "the library controls the size of the object by spliting into array user provided size value ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "object",
+    "split"
+  ],
+  "author": "kiran dudyala",
+  "license": "ISC"
+}
