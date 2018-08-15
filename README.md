@@ -10,7 +10,7 @@
 
 ## Installation
   
-  `npm install objectsize4cloud --save`
+  `npm install objectchunk4cloud --save`
 
 ## Usage Example
   
