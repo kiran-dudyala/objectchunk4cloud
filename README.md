@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/kiran-dudyala/objectchunk4cloud.svg?branch=master)](https://travis-ci.org/kiran-dudyala/objectchunk4cloud)
+[![NPM](https://nodei.co/npm/objectchunk4cloud.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/objectchunk4cloud/)
 
 ### ObjectChunk4Cloud
 
