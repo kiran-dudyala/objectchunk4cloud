@@ -6,7 +6,7 @@
   
   And as a developer we need to take these calculations into account and make consistent writes to avoid bill shocks. 
 
-  Now, ObjectChunk4Cloud is a little package that is intended address these issues. This package gets the size of the object such as (Number, String, Arrays, Buffer, Boolean). And, it chunks the array objects into user defined size in bytes.
+  Now, ObjectChunk4Cloud is a little package that is intended to address these issues. This package gets the size of the object such as (Number, String, Arrays, Buffer, Boolean). And, it chunks the array objects into user defined size in bytes.
 
 
 ## Installation
@@ -17,7 +17,7 @@
   
   ```javascript
   var objsize = require('objectchunk4cloud');
-
+ 
   var arraylist = [{ one: 235463 }, { 23: 325 }, { "testOne": 4734 }, { "TestThree": 423534 }];
   var singlearray = { one: false };
   var stringvalue = "Hello World!";
@@ -25,12 +25,14 @@
   var numbervalue = 1243524;
   var buffervalue = Buffer.from(stringvalue);
 
-  console.log(objsize.getsizeofobjects(arraylist, 50));
-  console.log(objsize.getsizeofvalues(singlearray));
-  console.log(objsize.getsizeofvalues(stringvalue));
-  console.log(objsize.getsizeofvalues(boolenvalue));
-  console.log(objsize.getsizeofvalues(numbervalue));
-  console.log(objsize.getsizeofobjects(buffervalue));
+  var chunkarraysize = 50; // 50 Bytes
+
+  console.log(objsize.getsizeofobjects(arraylist, chunkarraysize)); //{totalsize: "80B", eachobjectsize: "20B", output: Array(2)}
+  console.log(objsize.getsizeofobjects(singlearray)); //=> 16 Bytes
+  console.log(objsize.getsizeofvalues(stringvalue)); //=> 24 Bytes
+  console.log(objsize.getsizeofvalues(boolenvalue)); //=> 4 Bytes
+  console.log(objsize.getsizeofvalues(numbervalue)); //=> 8 Bytes
+  console.log(objsize.getsizeofobjects(buffervalue)); //=> 12 Bytes
   ```
 ### Tests
 
