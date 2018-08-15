@@ -4,9 +4,10 @@
 
   Before we know ObjectChunk4Cloud, let me introduce why I have written this package. We all have come across cloud computing where the provider place a restriction on object size limit when reading or writing ex:(AWS DynamoDB has 1KB x 5 write capacity). 
   
-  And as a developer we need to take these calculations into account and make consistant writes to avoid bill shocks. 
+  And as a developer we need to take these calculations into account and make consistent writes to avoid bill shocks. 
 
-  Now, ObjectChunk4Cloud is a little package that is intented address these issues. This package gets the size of the object such as (number, string, arrays, buffer, boolean). And also it chunks the array objects into user defined values in bytes.
+  Now, ObjectChunk4Cloud is a little package that is intended address these issues. This package gets the size of the object such as (Number, String, Arrays, Buffer, Boolean). And, it chunks the array objects into user defined size in bytes.
+
 
 ## Installation
   

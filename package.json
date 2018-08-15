@@ -1,14 +1,20 @@
 {
-  "name": "objectsizelimit",
+  "name": "objectchunk4cloud",
   "version": "1.0.0",
-  "description": "the library controls the size of the object by spliting into array user provided size value ",
+  "description": "objectchunk4cloud is a little package which gets the object size and also chunks the object into user defined size",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
   },
   "keywords": [
-    "object",
-    "split"
+    "object size",
+    "value size",
+    "size of",
+    "array size",
+    "object chunk",
+    "object divide",
+    "object chunk into size",
+    "user defined object size"
   ],
   "author": "kiran dudyala",
   "license": "ISC",
