@@ -4,7 +4,7 @@
   "description": "the library controls the size of the object by spliting into array user provided size value ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter nyan"
+    "test": "mocha --reporter spec"
   },
   "keywords": [
     "object",
