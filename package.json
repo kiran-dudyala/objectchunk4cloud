@@ -1,6 +1,6 @@
 {
   "name": "objectchunk4cloud",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "objectchunk4cloud is a little package which gets the object size and also chunks the object into user defined size",
   "main": "index.js",
   "scripts": {
