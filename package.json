@@ -1,10 +1,14 @@
 {
   "name": "objectchunk4cloud",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "objectchunk4cloud is a little package which gets the object size and also chunks the object into user defined size",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiran-dudyala/objectchunk4cloud"
   },
   "keywords": [
     "object size",
@@ -14,10 +18,19 @@
     "object chunk",
     "object divide",
     "object chunk into size",
-    "user defined object size"
+    "user defined object size",
+    "chunk",
+    "object",
+    "size",
+    "stream",
+    "buffer"
   ],
   "author": "kiran dudyala",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs":{
+    "url":"https://github.com/kiran-dudyala/objectchunk4cloud/issues"
+  },
+  "homepage":"https://github.com/kiran-dudyala/objectchunk4cloud#README.md",
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0"
